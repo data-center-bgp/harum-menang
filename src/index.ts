@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import { userRouter } from "./user/user.router";
 import { balikpapanRouter } from "./balikpapan/balikpapan.router";
 import { createServer } from "http";
 
@@ -11,6 +12,7 @@ app.use(cors());
 
 const server = createServer(app);
 
+app.use("/user", userRouter);
 app.use("/balikpapan", balikpapanRouter);
 
 server.listen(port, () => {
