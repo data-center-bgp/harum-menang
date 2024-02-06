@@ -1,0 +1,224 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model balikpapan {
+  nik           String? @unique(map: "unique_row_balikpapan")
+  nkk           String?
+  nama          String?
+  jenis_kelamin String?
+  usia          String?
+  tempat_lahir  String?
+  kawin         String?
+  difabel       String?
+  alamat        String?
+  rw            String?
+  rt            String?
+  pro           String?
+  kab           String?
+  kec           String?
+  kode_kel      String?
+  kel           String?
+  no_tps        String?
+  id            Int     @id @default(autoincrement())
+}
+
+model berau {
+  nik           String?
+  nkk           String?
+  nama          String?
+  jenis_kelamin String?
+  usia          Int?
+  tempat_lahir  String?
+  kawin         String?
+  difabel       Int?
+  alamat        String?
+  rw            Int?
+  rt            Int?
+  pro           String?
+  kab           String?
+  kec           String?
+  kode_kel      String?
+  kel           String?
+  no_tps        Int?
+  id            Int     @id @default(autoincrement())
+}
+
+model bontang {
+  nik           String?
+  nkk           String?
+  nama          String?
+  jenis_kelamin String?
+  usia          Int?
+  tempat_lahir  String?
+  kawin         String?
+  difabel       Int?
+  alamat        String?
+  rw            String?
+  rt            Int?
+  pro           String?
+  kab           String?
+  kec           String?
+  kode_kel      String?
+  kel           String?
+  no_tps        String?
+  id            Int     @id @default(autoincrement())
+}
+
+model kubar {
+  nik           String?
+  nkk           String?
+  nama          String?
+  jenis_kelamin String?
+  usia          Int?
+  tempat_lahir  String?
+  kawin         String?
+  difabel       Int?
+  alamat        String?
+  rw            Int?
+  rt            Int?
+  pro           String?
+  kab           String?
+  kec           String?
+  kode_kel      String?
+  kel           String?
+  no_tps        Int?
+  id            Int     @id @default(autoincrement())
+}
+
+model kukar {
+  HEADER        String?
+  nik           String?
+  nkk           String?
+  nama          String?
+  jenis_kelamin String?
+  usia          String?
+  tempat_lahir  String?
+  kawin         String?
+  difabel       String?
+  alamat        String?
+  rw            String?
+  rt            Int?
+  pro           String?
+  kab           String?
+  kec           String?
+  kode_kel      String?
+  kel           String?
+  no_tps        String?
+  id            Int     @id @default(autoincrement())
+}
+
+model kutim {
+  nik           String?
+  nkk           String?
+  nama          String?
+  jenis_kelamin String?
+  usia          Int?
+  tempat_lahir  String?
+  kawin         String?
+  difabel       Int?
+  alamat        String?
+  rw            Int?
+  rt            Int?
+  pro           String?
+  kab           String?
+  kec           String?
+  kode_kel      String?
+  kel           String?
+  no_tps        Int?
+  id            Int     @id @default(autoincrement())
+}
+
+model mahulu {
+  nik           String?
+  nkk           String?
+  nama          String?
+  jenis_kelamin String?
+  usia          Int?
+  tempat_lahir  String?
+  kawin         String?
+  difabel       Int?
+  alamat        String?
+  rw            Int?
+  rt            Int?
+  pro           String?
+  kab           String?
+  kec           String?
+  kode_kel      String?
+  kel           String?
+  no_tps        Int?
+  id            Int     @id @default(autoincrement())
+}
+
+model paser {
+  nik           String?
+  nkk           String?
+  nama          String?
+  jenis_kelamin String?
+  usia          Int?
+  tempat_lahir  String?
+  kawin         String?
+  difabel       String?
+  alamat        String?
+  rw            String?
+  rt            Int?
+  pro           String?
+  kab           String?
+  kec           String?
+  kode_kel      String?
+  kel           String?
+  no_tps        String?
+  id            Int     @id @default(autoincrement())
+}
+
+model ppu {
+  nik           String?
+  nkk           String?
+  nama          String?
+  jenis_kelamin String?
+  usia          Int?
+  tempat_lahir  String?
+  kawin         String?
+  difabel       Int?
+  alamat        String?
+  rw            Int?
+  rt            Int?
+  pro           String?
+  kab           String?
+  kec           String?
+  kode_kel      String?
+  kel           String?
+  no_tps        Int?
+  id            Int     @id @default(autoincrement())
+}
+
+model samarinda {
+  nik           String?
+  nkk           String?
+  nama          String?
+  jenis_kelamin String?
+  usia          String?
+  tempat_lahir  String?
+  kawin         String?
+  difabel       String?
+  alamat        String?
+  rw            String?
+  rt            String?
+  pro           String?
+  kab           String?
+  kec           String?
+  kode_kel      String?
+  kel           String?
+  no_tps        String?
+  id            Int     @id @default(autoincrement())
+}
+
+model test {
+  id   Int    @id @default(autoincrement())
+  name String
+}
